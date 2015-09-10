@@ -1,0 +1,112 @@
+/*
+#exemple {
+  width: 100px;
+  height: 100px;
+  background-color: #d11612;
+}
+
+.bloc {
+  display: block;
+}
+
+.titi {
+  border: 5px solid blue;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#liste {
+  transition: 1s;
+}
+
+#liste li {
+  transition: 1s;
+}
+
+.listeBackground {
+  transition: 1s;
+  padding-left: 40px;
+  background-color: #d11612;
+  color: #FFF;
+}
+
+.trash {
+  display: none;
+}
+*/
+
+#carousel {
+  position: relative;
+  width: 570px;
+  height: 200px;
+  border: 1px #000 solid;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.bloc {
+  width: 360px;
+  margin: 0 auto;
+}
+
+#prev, #suivant {
+  outline: none;
+}
+
+#carousel li {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+#carousel li h2 {
+  color: #FFF;
+  text-align:center;
+  margin: 82.5px auto;
+}
+
+/* impaire (1er et 3e) */
+#carousel li:nth-child(odd) {
+    background-color: #d11612;
+}
+
+/* pair (2e et 4e) */
+#carousel li:nth-child(even) {
+    background-color: #ea2a29;
+}
+
+#pagination {
+  display: inline-block;
+}
+
+#pagination .bulle {
+  transition: 1s;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #ea2a29;
+  border-radius: 50%;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  width: 50px;
+  margin: 0 5px;
+  border: 2px solid #ea2a29;
+  box-sizing: border-box;
+}
+
+#pagination .bulle:hover {
+  transition: 1s;
+  background-color: #FFF;
+  color: #ea2a29;
+}
